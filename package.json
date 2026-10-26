@@ -1,0 +1,35 @@
+{
+  "name": "invenio-mcp",
+  "version": "1.0.0",
+  "description": "Official Model Context Protocol (MCP) server for Invenio Threat Intelligence & OSINT APIs",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "invenio-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "invenio",
+    "osint",
+    "fraud-prevention",
+    "email-risk"
+  ],
+  "author": "Invenio",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "typescript": "^5.8.2"
+  }
+}
