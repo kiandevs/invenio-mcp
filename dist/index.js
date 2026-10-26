@@ -23,6 +23,7 @@ async function requestInvenio(endpoint, options = {}) {
     const headers = {
         Authorization: `Bearer ${apiKey}`,
         "User-Agent": "invenio-mcp/1.0.0",
+        "X-Purpose": "MCP",
     };
     const init = {
         method: options.method || "GET",
